@@ -12,9 +12,7 @@ pub fn div(a: i64, b: i64) i64 {
     return @divTrunc(a, b);
 }
 
-pub fn main() !void {
-    var gpa = std.heap.GeneralPurposeAllocator(.{}){};
-    defer _ = gpa.deinit();
-    const out = std.io.getStdOut().writer();
-    try out.print("{d}\n", .{add(2, 3)});
+pub fn main() void {
+    const total = add(2, 3);
+    if (total == 0) unreachable;
 }

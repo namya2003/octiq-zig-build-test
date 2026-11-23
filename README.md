@@ -1,6 +1,6 @@
 # octiq-zig-build-test
 
-Zig fixture with a real build step (`zig build`), pinned to 0.14.1 via
+Zig fixture with a real build step (`zig build`), pinned to 0.15.2 via
 `.zig-version`. No tests: sync only asks whether the tree builds.
 
 Used to exercise the indexed tier's sync build verdict:
